@@ -29,6 +29,7 @@ Day 1 · Tue, Nov 10, 2026 · Hands-on: [notebooks/01-lakehouse-delta.py](../not
 
 **Databricks does housekeeping for you (auto-compaction)**
 - Right after my UPDATE, a **second commit** appeared: `OPTIMIZE` with `auto -> true`. It compacted 9 files + 8 deletion vectors into **1 file**.
+- Same thing on the managed table `iot_bronze`: v0 `WRITE` → v1 `UPDATE` → v2 `DELETE` → v3 `OPTIMIZE` (auto), which compacted 9 files + 8 deletion vectors into 1.
 - **Gotcha:** `userName` in the history shows *me* even for automatic operations. Check the `operation` column and `operationParameters.auto` to see what really happened.
 
 **What Databricks adds on top of Spark**
@@ -45,6 +46,13 @@ Day 1 · Tue, Nov 10, 2026 · Hands-on: [notebooks/01-lakehouse-delta.py](../not
 - *TODO:* why does that make time travel possible, and what deletes old files?
 - *TODO:* why did companies run both a lake and a warehouse, and what problem did that cause?
 - *TODO:* if I can run Spark myself, what am I paying Databricks for?
+
+## Day 1 wrap-up
+
+- **Done:** set up Free Edition, explored `samples`, generated IoT telemetry, wrote Delta to a volume, read `_delta_log/` commits, ran UPDATE/DELETE, used `DESCRIBE HISTORY` and `VERSION AS OF`, worked out the auto-compaction commit, set up the Databricks CLI.
+- **Time-travel result (v0 of `iot_bronze`):** 5 sensors × 200 rows; sensor-3 avg 28.05 °C before the −2 °C fix.
+- **Carry-over:** answer the four TODOs above; compare the current `iot_bronze` with v0.
+- **Next:** Day 2, Spark architecture. Start with: why did my write create exactly 8 files?
 
 ## Questions
 

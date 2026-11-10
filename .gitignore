@@ -10,6 +10,8 @@ venv/
 
 # Databricks
 .databricks/
+# Notebook exports with outputs can contain emails/IDs; commit .py source exports only
+*.ipynb
 
 # OS / editor
 .DS_Store
