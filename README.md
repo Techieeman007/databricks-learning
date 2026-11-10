@@ -6,20 +6,21 @@ My learning log for Databricks, covering both data engineering and AI/ML. The go
 
 ### Meetup sprint (Nov 10–13, 2026)
 
-Prep for the [Databricks meetup in Coimbatore on Nov 14](meetup/2026-11-14-coimbatore.md).
+Prep for the [Databricks User Group Coimbatore meetup on Sat, Nov 14](meetup/2026-11-14-coimbatore.md).
 
-| Day | Date | Focus | Status |
-|-----|------|-------|--------|
-| 1 | Mon, Nov 10 | Lakehouse fundamentals + Delta Lake | ⬜ Not started |
-| 2 | Tue, Nov 11 | Spark DataFrames + Free Edition hands-on | ⬜ Not started |
-| 3 | Wed, Nov 12 | Platform: Unity Catalog, Jobs, DLT | ⬜ Not started |
-| 4 | Thu, Nov 13 | AI/ML overview + finalize meetup questions | ⬜ Not started |
+| Day | Date | Focus | Notes | Status |
+|-----|------|-------|-------|--------|
+| 1 | Tue, Nov 10 | Lake vs warehouse vs lakehouse; what Databricks adds over Spark; Delta Lake basics | [01-lakehouse.md](notes/01-lakehouse.md) | 🟨 In progress |
+| 2 | Wed, Nov 11 | Spark architecture, DataFrames, transformations vs actions, first PySpark notebook | [02-spark.md](notes/02-spark.md) | ⬜ Not started |
+| 3 | Thu, Nov 12 | Workspace, compute, Delta (ACID, time travel), Unity Catalog, Databricks SQL, Lakeflow/Jobs | [03-platform.md](notes/03-platform.md) | ⬜ Not started |
+| 4 | Fri, Nov 13 | MLflow + model lifecycle, Mosaic AI, Genie; finalize meetup questions | [04-ai-ml.md](notes/04-ai-ml.md) | ⬜ Not started |
+| — | Sat, Nov 14 | Databricks User Group Coimbatore meetup | [meetup notes](meetup/2026-11-14-coimbatore.md) | ⬜ Upcoming |
 
 ### Learning phases
 
 | Phase | Topic | Notes | Status |
 |-------|-------|-------|--------|
-| 1 | Lakehouse & Delta Lake | [01-lakehouse.md](notes/01-lakehouse.md) | ⬜ Not started |
+| 1 | Lakehouse & Delta Lake | [01-lakehouse.md](notes/01-lakehouse.md) | 🟨 In progress |
 | 2 | Apache Spark on Databricks | [02-spark.md](notes/02-spark.md) | ⬜ Not started |
 | 3 | Platform: Unity Catalog, Workflows, DLT | [03-platform.md](notes/03-platform.md) | ⬜ Not started |
 | 4 | AI/ML: MLflow, Feature Store, Model Serving | [04-ai-ml.md](notes/04-ai-ml.md) | ⬜ Not started |
