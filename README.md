@@ -10,7 +10,7 @@ Prep for the [Databricks User Group Coimbatore meetup on Sat, Nov 14](meetup/202
 
 | Day | Date | Focus | Notes | Status |
 |-----|------|-------|-------|--------|
-| 1 | Tue, Nov 10 | Lake vs warehouse vs lakehouse; what Databricks adds over Spark; Delta Lake basics | [01-lakehouse.md](notes/01-lakehouse.md) | 🟨 In progress |
+| 1 | Tue, Nov 10 | Lake vs warehouse vs lakehouse; what Databricks adds over Spark; Delta Lake basics | [01-lakehouse.md](notes/01-lakehouse.md) | ✅ Done |
 | 2 | Wed, Nov 11 | Spark architecture, DataFrames, transformations vs actions, first PySpark notebook | [02-spark.md](notes/02-spark.md) | ⬜ Not started |
 | 3 | Thu, Nov 12 | Workspace, compute, Delta (ACID, time travel), Unity Catalog, Databricks SQL, Lakeflow/Jobs | [03-platform.md](notes/03-platform.md) | ⬜ Not started |
 | 4 | Fri, Nov 13 | MLflow + model lifecycle, Mosaic AI, Genie; finalize meetup questions | [04-ai-ml.md](notes/04-ai-ml.md) | ⬜ Not started |
@@ -31,7 +31,7 @@ Status key: ⬜ Not started · 🟨 In progress · ✅ Done
 ## Repo layout
 
 - [notes/](notes/) — concept notes per phase
-- [notebooks/](notebooks/) — notebooks exported from Databricks
+- [notebooks/](notebooks/) — notebooks exported from Databricks (e.g. [Day 1](notebooks/01-lakehouse-delta.py))
 - [projects/](projects/) — hands-on projects
 - [meetup/](meetup/) — meetup prep and takeaways
 
